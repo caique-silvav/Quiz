@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header>
+    <h1>Quiz interativo para programadores</h1>
+    <p>
+      Teste seu conhecimento em programação e veja qual pontuação vc consegue
+      fazer!
+    </p>
+  </header>
+
+  <main>
+    <!--Introdução-->
+    <section>
+      <h2>Sobre o quiz</h2>
+      <p>
+        <strong>Este quiz</strong> foi desenvolvido para ajudar programadores
+        a testar e aprimorar seus conhecimentos em diversas linguagens de
+        programação. Com perguntas variadas, você pode desafiar a si mesmo e
+        aprender algo novo a cada tentativa. <br />Desafie seus amigos e veja
+        quem consegue a maior pontuação!
+      </p>
+      <p>
+        Você poderá encontrar alguns acrônimos como
+        <abbr title="HyperText Markup Language">HTML</abbr> e
+        <abbr title="Cascading Style Sheets">CSS</abbr> que são comumente
+        usados em questões relacionadas a desenvolvimento web.
+      </p>
+    </section>
+    <!--Quiz-->
+    <!--Pergunta 1: Múltipla escolha-->
+    <section>
+      <h2>Pergunta 1: Qual Linguagem é usada para estruturar páginas web?</h2>
+      <form>
+        <input type="radio" id="html" name="q1" value="html" />
+        <label for="html">HTML</label><br />
+        <input type="radio" id="css" name="q1" value="css" />
+        <label for="css">CSS</label><br />
+        <input type="radio" id="js" name="q1" value="js" />
+        <label for="js">JavaScript</label><br />
+        <input type="radio" id="python" name="q1" value="python" />
+        <label for="python">Python</label><br />
+      </form>
+    </section>
+    <!--Pergunta 2: Texto-->
+    <section>
+      <h2>
+        Pergunta 2: Na URL https://google.com o trecho "google é o" ____
+      </h2>
+      <form>
+        <input type="text" id="url" name="q2" placeholder="Digite aqui...." />
+      </form>
+    </section>
+    <!--Pergunta 3: Senha-->
+    <section>
+      <h2>Pergunta 3: Escreva um exemplo de senha forte</h2>
+      <form>
+        <input type="password" id="senha" name="q3" placeholder="Digite uma senha...." />
+      </form>
+    </section>
+    <!--Pergunta 4: Data -->
+    <section>
+      <h2>Pergunta 4: Quando foi lançado o JavaScript?</h2>
+      <form>
+        <input type="date" id="data" name="q4" />
+      </form>
+    </section>
+    <!--Pergunta 5: Seleção Múltipla-->
+    <section>
+      <h2>
+        Pergunta 5: Quais dessas tecnologias são consideradas linguagens de
+        programação?
+      </h2>
+      <form>
+        <input type="checkbox" id="python" name="q5" value="python" />
+        <label for="python">Python</label><br />
+        <input type="checkbox" id="html" name="q5" value="html" />
+        <label for="html">HTML</label><br />
+        <input type="checkbox" id="js" name="q5" value="js" />
+        <label for="js">JavaScript</label><br />
+        <input type="checkbox" id="css" name="q5" value="css" />
+        <label for="css">CSS</label><br />
+        <input type="checkbox" id="java" name="q5" value="java" />
+        <label for="java">Java</label><br />
+      </form>
+    </section>
+    <!--Pergunta 6 upload de arquivo-->
+    <section>
+      <h2>Pergunta 6: Faça um upload de um arquivo contendo código HTML</h2>
+      <form>
+        <input type="file" id="arquivo" name="q6" accept=".html" />
+      </form>
+    </section>
+    <!--Pergunta 7 menu suspenso-->
+    <section>
+      <h2>
+        Pergunta 7: Selecione o atributo do input que define o seu tipo:
+      </h2>
+      <form>
+        <select id="atributo" name="q7">
+          <option value="name">Name</option>
+          <option value="type">Type</option>
+          <option value="value">Value</option>
+          <option value="id">Id</option>
+        </select>
+      </form>
+    </section>
+    <!--Pergunta 8 Imagem-->
+    <section>
+      <h2>
+        Pergnta 8: Qual linguagem de programação é representada pelo logotipo
+        abaixo?
+      </h2>
+      <figure>
+        <img src="assets/java.png" alt="logo_php" width="100" /><br />
+      </figure>
+      <input type="text" id="linguagem" name="q8" placeholder="Digite aqui...." />
+    </section>
+
+    <!--Tabela de pontuação-->
+    <section>
+      <h2>Tabela de Pontuação</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Pontuação</th>
+            <th>Desempenho</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0-3</td>
+            <td>Iniciante</td>
+          </tr>
+          <tr>
+            <td>4-6</td>
+            <td>Intermediário</td>
+          </tr>
+          <tr>
+            <td>7-8</td>
+            <td>Avançado</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!--Gabarito-->
+    <section>
+      <h2>Gabarito</h2>
+
+      <details>
+        <summary>Respostas:</summary>
+        <ol>
+          <li>HTML</li>
+          <li>Domínio</li>
+          <li>Exemplo de senha forte: P@ssw0rd!</li>
+          <li>1995-12-04</li>
+          <li>Python, JavaScript, Java</li>
+          <li>Arquivo HTML enviado</li>
+          <li>Type</li>
+          <li>Java</li>
+        </ol>
+      </details>
+    </section>
+
+    <section>
+
+      <h2>Feedback</h2>
+      <form>
+        <fieldset>
+          <legend>Informações de contato</legend>
+          <label for="nome">Nome:</label><br />
+          <input type="text" id="nome" name="nome" placeholder="Seu nome..." /><br /><br />
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" placeholder="Seu email..." /><br /><br />
+          <label for="mensagem">Mensagem:</label><br />
+          <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br /><br />
+          <button type="submit">Enviar Feedback</button>
+        </fieldset>
+    </section>
+
+  </main>
+
+  <footer>
+    <p class="paragrafo-footer">Desenvolvido por Caique Silva Viana. Todos os direitos reservados &copy; 2025</p>
+
+  </footer>
+</body>
+
+</html>
